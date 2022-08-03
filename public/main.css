@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   width: 1920px;
   margin: auto;
@@ -359,6 +360,135 @@ header .frame65Flex div {
 }
 
 .container1 .reserv button {
+  width: 157px;
+  height: 44px;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 172%;
+  letter-spacing: 0.04em;
+  color: #0C0B08;
+  padding: 4px 8px;
+  background-color: #DCCA87;
+  border: solid 1px #DCCA87;
+  border-radius: 1%;
+}
+
+.menuEat {
+  background-image: url("./img/Стакан.png");
+  min-height: 900px;
+}
+
+.menuEat .menuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 900px;
+  margin-left: 145px;
+}
+
+.menuEat .menuFlex a {
+  margin-bottom: 64px;
+  text-decoration: none;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.menuEat .menuFlex a:hover {
+  text-decoration: underline;
+}
+
+.menuBar {
+  background-color: black;
+}
+
+.menuBar .BarFlex {
+  padding-top: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuBar .card1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.menuBar .card2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.menuBar .card3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+}
+
+.menuBar .BarMenuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.menuBar .BarMenuFlex .Wine {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.menuBar .BarMenuFlex .Cocktails {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.menuBar button {
+  margin-top: 65px;
+  margin-bottom: 152px;
   width: 157px;
   height: 44px;
   font-family: "Cormorant Upright";

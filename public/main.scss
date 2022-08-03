@@ -218,6 +218,69 @@ header{
     }
 }
 
+.menuEat{
+    background-image: url('./img/Стакан.png');
+    min-height: 900px;
+    .menuFlex{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 900px;
+        margin-left: 145px;
+        & a{
+            margin-bottom: 64px;
+            text-decoration: none;
+            @include text('Cormorant Upright',normal,600,64px,130%,0.03em,#FFFFFF) ;
+        }
+        & a:hover{
+            text-decoration:underline ;
+        }
+    }
+}
+
+.menuBar{
+   background-color: black;
+    & .BarFlex{
+        padding-top: 152px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    & .card1{
+        @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
+    }
+    & .card2{
+        margin-top: 8px;
+        margin-bottom: 8px
+    }
+    & .card3{
+        @include text('Cormorant Upright',normal,600,64px,130%,0.04em,#DCCA87) ;
+    }
+    & .BarMenuFlex{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        & .Wine{
+            @include text('Cormorant Upright',normal,600,45px,130%,0.04em,#FFFFFF) ;
+        }
+        & .Cocktails{
+            @include text('Cormorant Upright',normal,600,45px,130%,0.04em,#FFFFFF) ;
+        }
+    }
+    & button{
+        margin-top:65px ;
+        margin-bottom: 152px;
+        width: 157px;
+        height: 44px;
+        @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#0C0B08) ;
+        padding: 4px 8px;
+        background-color: #DCCA87;
+        border: solid 1px #DCCA87;
+        border-radius: 1%;    
+    }
+}
+
 
 
 
