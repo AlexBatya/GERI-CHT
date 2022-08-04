@@ -7,6 +7,14 @@
     letter-spacing: $spacing;
     color: $color;
 }
+@mixin button($widht,$height,$padding,$backColor,$border,$borderRad) {
+    width:$widht ;
+    height: $height;
+    padding: $padding;
+    background-color: $backColor;
+    border: $border;
+    border-radius: $borderRad;   
+}
 
 .container{
     width: 1920px;
@@ -62,13 +70,8 @@ header{
             @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#AAAAAA) ;
         }
         & button{
-            width: 157px;
-            height: 44px;
+            @include button(157px,44px,4px 8px,#DCCA87,solid 1px #DCCA87,1%) ;
             @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#0C0B08) ;
-            padding: 4px 8px;
-            background-color: #DCCA87;
-            border: solid 1px #DCCA87;
-            border-radius: 1%;
         }
         & button:hover{
             background-color: #AAAAAA;
@@ -139,13 +142,8 @@ header{
                 text-align: right;
             }
             & button{
-                width: 157px;
-                height: 44px;
+                @include button(157px,44px,4px 8px,#DCCA87,solid 1px #DCCA87,1%) ;
                 @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#0C0B08) ;
-                padding: 4px 8px;
-                background-color: #DCCA87;
-                border: solid 1px #DCCA87;
-                border-radius: 1%;   
             }
             & .revresBut{
                 margin-left: auto;
@@ -207,13 +205,8 @@ header{
             @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#0C0B08) ;
         }
         & button{
-            width: 157px;
-            height: 44px;
+            @include button(157px,44px,4px 8px,#DCCA87,solid 1px #DCCA87,1%) ;
             @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#0C0B08) ;
-            padding: 4px 8px;
-            background-color: #DCCA87;
-            border: solid 1px #DCCA87;
-            border-radius: 1%;   
         }
     }
 }
@@ -269,18 +262,104 @@ header{
         }
     }
     & button{
+        @include button(157px,44px,4px 8px,#DCCA87,solid 1px #DCCA87,1%) ;
         margin-top:65px ;
         margin-bottom: 152px;
-        width: 157px;
-        height: 44px;
         @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#0C0B08) ;
-        padding: 4px 8px;
-        background-color: #DCCA87;
-        border: solid 1px #DCCA87;
-        border-radius: 1%;    
     }
 }
 
+.shef{
+    min-height: 959px;
+    background-image: url('./img/BG.jpg');
+    & .shefFlex{
+        padding: 0 310px ;
+        min-height: 959px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        & .imgShef{
 
+        }
+        & .promoShefFlex{
+            max-width: 570px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            & .card1{
+                @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
+                margin-bottom: 8px
+            }
+            & .card2{
+                margin-bottom: 8px
+            }
+            & .card3{
+                @include text('Cormorant Upright',normal,600,64px,130%,0.03em,#DCCA87) ;
+                margin-bottom: 76px
+            }
+            & .card4{
+                @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#AAAAAA) ;
+                margin-bottom: 64px
+            }
+            & .card5{
+                @include text('Cormorant Upright',normal,400,32px,130%,0.04em,#DCCA87) ;
+                margin-bottom: 8px
+            }
+            & .card6{
+                @include text('Cormorant Upright',normal,400,16px,172%,0.04em,#AAAAAA) ;
+                margin-bottom: 64px
+            }
+            
+        }
+    }
+}
 
+.clients{
+    min-height: 686px;
+    background-color: black;
+    & .clientsGrid{
+        padding: 152px 310px;
+        min-height: 686px;
+        display: grid;
+        grid-template-rows: repeat(3,33.3%);
+        grid-template-columns: repeat(2,50%);
+        gap:0 16px;
+        & .clientsFlex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1/3;
+            & .text1{
+                @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
+                margin-bottom: 8px
+            }
+            & .text2{
+                margin-bottom: 8px
+            }
+            & .text3{
+                @include text('Cormorant Upright',normal,600,64px,130%,0.03em,#DCCA87) ;
+            }
+        }
+        & .photo{
+            display: flex;
+            align-items: center;
+            & .cardsFlex{
+                margin-left: 10px;
+                display: flex;
+                flex-direction: column;
+                & .text1{
+                    @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#AAAAAA) ;
+                }
+                & .text2{
+                    @include text('Cormorant Upright',normal,400,32px,130%,0.04em,#DCCA87) ;
+                }
+                & .text3{
+                    @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#F5EFDB) ;
+                }
+            }
+        }
+    }
+
+}

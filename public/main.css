@@ -5,18 +5,12 @@
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
   height: 121px;
 }
-
 header .logo {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -26,16 +20,11 @@ header .logo {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 header .manuFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 409px;
 }
-
 header .manuFlex a {
   text-decoration: none;
   font-family: "Cormorant Upright";
@@ -46,16 +35,11 @@ header .manuFlex a {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 header .frame65Flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 364px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 header .frame65Flex div {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -68,30 +52,17 @@ header .frame65Flex div {
 
 .HeroFlex {
   padding-top: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .HeroFlex .card1 {
   width: 453px;
   height: 481px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .HeroFlex .card1 .flacour {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -101,7 +72,6 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 .HeroFlex .card1 .keyFine {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -111,7 +81,6 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #DCCA87;
 }
-
 .HeroFlex .card1 p {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -121,10 +90,13 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #AAAAAA;
 }
-
 .HeroFlex .card1 button {
   width: 157px;
   height: 44px;
+  padding: 4px 8px;
+  background-color: #DCCA87;
+  border: solid 1px #DCCA87;
+  border-radius: 1%;
   font-family: "Cormorant Upright";
   font-style: normal;
   font-weight: 400;
@@ -132,32 +104,20 @@ header .frame65Flex div {
   line-height: 172%;
   letter-spacing: 0.04em;
   color: #0C0B08;
-  padding: 4px 8px;
-  background-color: #DCCA87;
-  border: solid 1px #DCCA87;
-  border-radius: 1%;
 }
-
 .HeroFlex .card1 button:hover {
   background-color: #AAAAAA;
 }
-
 .HeroFlex .card2 {
   margin-left: 180px;
 }
-
 .number {
   padding-top: 64px;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-bottom: 148px;
 }
-
 .number a {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -174,43 +134,28 @@ header .frame65Flex div {
   position: relative;
   min-height: 959px;
 }
-
 .about .G {
   position: absolute;
   top: 25%;
   right: 40%;
 }
-
 .about .knife {
   position: absolute;
   top: 10%;
   right: 48%;
 }
-
 .about .textFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   min-height: 959px;
 }
-
 .about .textFlex .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 292px;
   width: 523px;
 }
-
 .about .textFlex .card .card1 {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -221,7 +166,6 @@ header .frame65Flex div {
   color: #DCCA87;
   margin-bottom: 8px;
 }
-
 .about .textFlex .card .card2 {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -232,18 +176,19 @@ header .frame65Flex div {
   color: #AAAAAA;
   margin-top: 32px;
 }
-
 .about .textFlex .card .card3 {
   margin-top: 8px;
 }
-
 .about .textFlex .revres {
   text-align: right;
 }
-
 .about .textFlex button {
   width: 157px;
   height: 44px;
+  padding: 4px 8px;
+  background-color: #DCCA87;
+  border: solid 1px #DCCA87;
+  border-radius: 1%;
   font-family: "Cormorant Upright";
   font-style: normal;
   font-weight: 400;
@@ -251,12 +196,7 @@ header .frame65Flex div {
   line-height: 172%;
   letter-spacing: 0.04em;
   color: #0C0B08;
-  padding: 4px 8px;
-  background-color: #DCCA87;
-  border: solid 1px #DCCA87;
-  border-radius: 1%;
 }
-
 .about .textFlex .revresBut {
   margin-left: auto;
 }
@@ -271,25 +211,15 @@ header .frame65Flex div {
   margin: auto;
   background-color: red;
 }
-
 .container1 .reserv {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   min-height: 466px;
   background: #0C0C0C;
   border: 1px solid rgba(220, 202, 135, 0.2);
-  -webkit-box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
-          box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
 }
-
 .container1 .reserv .card1 {
   margin-bottom: 8px;
   margin-top: 48px;
@@ -301,11 +231,9 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 .container1 .reserv .card2 {
   margin-bottom: 8px;
 }
-
 .container1 .reserv .card3 {
   margin-bottom: 64px;
   font-family: "Cormorant Upright";
@@ -316,14 +244,10 @@ header .frame65Flex div {
   letter-spacing: 0.03em;
   color: #DCCA87;
 }
-
 .container1 .reserv .card4 {
   margin-bottom: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 100%;
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -333,35 +257,29 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #0C0B08;
 }
-
 .container1 .reserv .card4 .forma {
   border: 1px solid #F5EFDB;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #0C0B08;
   width: 412px;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .container1 .reserv .card4 .forma input {
   width: 380px;
   height: 28px;
   background-color: #0C0B08;
-  border: solid 1px  #0C0B08;
+  border: solid 1px #0C0B08;
 }
-
 .container1 .reserv button {
   width: 157px;
   height: 44px;
+  padding: 4px 8px;
+  background-color: #DCCA87;
+  border: solid 1px #DCCA87;
+  border-radius: 1%;
   font-family: "Cormorant Upright";
   font-style: normal;
   font-weight: 400;
@@ -369,35 +287,20 @@ header .frame65Flex div {
   line-height: 172%;
   letter-spacing: 0.04em;
   color: #0C0B08;
-  padding: 4px 8px;
-  background-color: #DCCA87;
-  border: solid 1px #DCCA87;
-  border-radius: 1%;
 }
 
 .menuEat {
   background-image: url("./img/Стакан.png");
   min-height: 900px;
 }
-
 .menuEat .menuFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   min-height: 900px;
   margin-left: 145px;
 }
-
 .menuEat .menuFlex a {
   margin-bottom: 64px;
   text-decoration: none;
@@ -409,7 +312,6 @@ header .frame65Flex div {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-
 .menuEat .menuFlex a:hover {
   text-decoration: underline;
 }
@@ -417,21 +319,12 @@ header .frame65Flex div {
 .menuBar {
   background-color: black;
 }
-
 .menuBar .BarFlex {
   padding-top: 152px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .menuBar .card1 {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -441,12 +334,10 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 .menuBar .card2 {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-
 .menuBar .card3 {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -456,16 +347,11 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #DCCA87;
 }
-
 .menuBar .BarMenuFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 100%;
 }
-
 .menuBar .BarMenuFlex .Wine {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -475,7 +361,6 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 .menuBar .BarMenuFlex .Cocktails {
   font-family: "Cormorant Upright";
   font-style: normal;
@@ -485,12 +370,15 @@ header .frame65Flex div {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-
 .menuBar button {
-  margin-top: 65px;
-  margin-bottom: 152px;
   width: 157px;
   height: 44px;
+  padding: 4px 8px;
+  background-color: #DCCA87;
+  border: solid 1px #DCCA87;
+  border-radius: 1%;
+  margin-top: 65px;
+  margin-bottom: 152px;
   font-family: "Cormorant Upright";
   font-style: normal;
   font-weight: 400;
@@ -498,9 +386,153 @@ header .frame65Flex div {
   line-height: 172%;
   letter-spacing: 0.04em;
   color: #0C0B08;
-  padding: 4px 8px;
-  background-color: #DCCA87;
-  border: solid 1px #DCCA87;
-  border-radius: 1%;
 }
-/*# sourceMappingURL=main.css.map */
+
+.shef {
+  min-height: 959px;
+  background-image: url("./img/BG.jpg");
+}
+.shef .shefFlex {
+  padding: 0 310px;
+  min-height: 959px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shef .shefFlex .promoShefFlex {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.shef .shefFlex .promoShefFlex .card1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.shef .shefFlex .promoShefFlex .card2 {
+  margin-bottom: 8px;
+}
+.shef .shefFlex .promoShefFlex .card3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #DCCA87;
+  margin-bottom: 76px;
+}
+.shef .shefFlex .promoShefFlex .card4 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 64px;
+}
+.shef .shefFlex .promoShefFlex .card5 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+  margin-bottom: 8px;
+}
+.shef .shefFlex .promoShefFlex .card6 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 172%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 64px;
+}
+
+.clients {
+  min-height: 686px;
+  background-color: black;
+}
+.clients .clientsGrid {
+  padding: 152px 310px;
+  min-height: 686px;
+  display: grid;
+  grid-template-rows: repeat(3, 33.3%);
+  grid-template-columns: repeat(2, 50%);
+  gap: 0 16px;
+}
+.clients .clientsGrid .clientsFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+}
+.clients .clientsGrid .clientsFlex .text1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.clients .clientsGrid .clientsFlex .text2 {
+  margin-bottom: 8px;
+}
+.clients .clientsGrid .clientsFlex .text3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #DCCA87;
+}
+.clients .clientsGrid .photo {
+  display: flex;
+  align-items: center;
+}
+.clients .clientsGrid .photo .cardsFlex {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.clients .clientsGrid .photo .cardsFlex .text1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+.clients .clientsGrid .photo .cardsFlex .text2 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+}
+.clients .clientsGrid .photo .cardsFlex .text3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #F5EFDB;
+}/*# sourceMappingURL=main.css.map */
