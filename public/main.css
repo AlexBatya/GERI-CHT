@@ -318,6 +318,7 @@ header .frame65Flex div {
 
 .menuBar {
   background-color: black;
+  height: 1274px;
 }
 .menuBar .BarFlex {
   padding-top: 152px;
@@ -346,13 +347,21 @@ header .frame65Flex div {
   line-height: 130%;
   letter-spacing: 0.04em;
   color: #DCCA87;
+  margin-bottom: 64px;
 }
 .menuBar .BarMenuFlex {
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-.menuBar .BarMenuFlex .Wine {
+.menuBar .BarMenuFlex .WineFlex {
+  height: 100%;
+  width: 412px;
+}
+.menuBar .BarMenuFlex .WineFlex .Wine {
+  text-align: center;
   font-family: "Cormorant Upright";
   font-style: normal;
   font-weight: 600;
@@ -360,8 +369,48 @@ header .frame65Flex div {
   line-height: 130%;
   letter-spacing: 0.04em;
   color: #FFFFFF;
+  margin-bottom: 48px;
 }
-.menuBar .BarMenuFlex .Cocktails {
+.menuBar .BarMenuFlex .WineFlex .WineGrid {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 192px 119px 32px;
+  height: 100%;
+}
+.menuBar .BarMenuFlex .WineFlex .WineGrid .text1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+}
+.menuBar .BarMenuFlex .WineFlex .WineGrid .text2 {
+  text-align: center;
+  color: #FAFAFA;
+}
+.menuBar .BarMenuFlex .WineFlex .WineGrid .text3 {
+  text-align: center;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.menuBar .BarMenuFlex .WineFlex .WineGrid .text4 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 42px;
+}
+.menuBar .BarMenuFlex .CocktailsGrid {
   font-family: "Cormorant Upright";
   font-style: normal;
   font-weight: 600;
@@ -535,4 +584,190 @@ header .frame65Flex div {
   line-height: 175%;
   letter-spacing: 0.04em;
   color: #F5EFDB;
+}
+
+.video {
+  background-color: #0C0B08;
+}
+
+.laurels {
+  min-height: 691px;
+  background-image: url("./img/BG.jpg");
+}
+.laurels .laurelsFlex {
+  min-height: 691px;
+  padding: 128px 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 183px;
+}
+.laurels .laurelsFlex .laurelsGrid {
+  width: 100%;
+  height: 454px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 33.3%);
+}
+.laurels .laurelsFlex .laurelsGrid .textFlex {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+}
+.laurels .laurelsFlex .laurelsGrid .textFlex .text1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.laurels .laurelsFlex .laurelsGrid .textFlex .text2 {
+  margin-bottom: 8px;
+}
+.laurels .laurelsFlex .laurelsGrid .textFlex .text3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #DCCA87;
+}
+.laurels .laurelsFlex .laurelsGrid .cardGrid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 79px 191px;
+  grid-template-rows: 50% 50%;
+  gap: 0 32px;
+}
+.laurels .laurelsFlex .laurelsGrid .cardGrid .text1 {
+  grid-row: 1/3;
+}
+.laurels .laurelsFlex .laurelsGrid .cardGrid .text2 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #DCCA87;
+}
+.laurels .laurelsFlex .laurelsGrid .cardGrid .text3 {
+  grid-row: 2/3;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+.laurels .laurelsFlex .laurelsImg {
+  position: relative;
+}
+.laurels .laurelsFlex .laurelsImg .G2 {
+  position: absolute;
+  top: 312px;
+  right: 195px;
+}
+
+.blogs {
+  background-color: black;
+  min-height: 1032px;
+}
+.blogs .blogsGrid {
+  display: grid;
+  min-height: 1032px;
+  padding: 152px 310px;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: 202px 838px 44px;
+  gap: 0 13px;
+}
+.blogs .blogsGrid .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1/4;
+}
+.blogs .blogsGrid .texts .text1 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.blogs .blogsGrid .texts .text2 {
+  margin-bottom: 8px;
+}
+.blogs .blogsGrid .texts .text3 {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #DCCA87;
+}
+.blogs .blogsGrid .card {
+  display: flex;
+  flex-direction: column;
+}
+.blogs .blogsGrid .card .cardData {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #FAFAFA;
+}
+.blogs .blogsGrid .card .cardDescription {
+  margin-bottom: 32px;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+}
+.blogs .blogsGrid .card .cardTextDescr {
+  margin-bottom: 32px;
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+}
+.blogs .blogsGrid .card .readmore {
+  font-family: "Cormorant Upright";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #DCCA87;
+}
+.blogs .blogsGrid .butt {
+  text-align: center;
+  grid-area: 3/2;
+  justify-items: center;
+}
+.blogs .blogsGrid .butt button {
+  width: 157px;
+  height: 44px;
+  padding: 4px 8px;
+  background-color: #DCCA87;
+  border: solid 1px #DCCA87;
+  border-radius: 1%;
 }/*# sourceMappingURL=main.css.map */

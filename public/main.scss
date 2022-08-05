@@ -234,11 +234,14 @@ header{
 
 .menuBar{
    background-color: black;
+   height: 1274px;
     & .BarFlex{
         padding-top: 152px;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    & .barImg{
     }
     & .card1{
         @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
@@ -249,15 +252,45 @@ header{
     }
     & .card3{
         @include text('Cormorant Upright',normal,600,64px,130%,0.04em,#DCCA87) ;
+        margin-bottom: 64px;
     }
     & .BarMenuFlex{
+        height: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center ;
+        align-items: center;
         width: 100%;
-        & .Wine{
-            @include text('Cormorant Upright',normal,600,45px,130%,0.04em,#FFFFFF) ;
+        & .WineFlex{
+            height: 100%;
+            width: 412px;
+            & .Wine{
+                text-align: center;
+                @include text('Cormorant Upright',normal,600,45px,130%,0.04em,#FFFFFF) ;
+                margin-bottom: 48px;
+            }   
+            & .WineGrid{
+               display: grid ;
+                grid-template-rows: 50% 50%;
+                grid-template-columns: 192px 119px 32px;
+                height: 100%;
+                 & .text1{
+                    @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#DCCA87) ;
+                }
+                & .text2{
+                    text-align: center;
+                    color: #FAFAFA;
+                }
+                & .text3{
+                    text-align: center;
+                    @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
+                }
+                & .text4{
+                    @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#AAAAAA) ;
+                    margin-bottom: 42px;
+                }
+            }
         }
-        & .Cocktails{
+        & .CocktailsGrid{
             @include text('Cormorant Upright',normal,600,45px,130%,0.04em,#FFFFFF) ;
         }
     }
@@ -362,4 +395,130 @@ header{
         }
     }
 
+}
+.video{
+    background-color: #0C0B08;
+}
+
+.laurels{
+    min-height: 691px;
+    background-image: url('./img/BG.jpg');
+    & .laurelsFlex{
+        // position: relative;
+        min-height: 691px;
+        padding: 128px 310px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 183px;
+        & .laurelsGrid{
+            width: 100%;
+            height: 454px;
+            display: grid;
+            
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows:repeat(3,33.3%) ;
+            & .textFlex{
+                display: flex;
+                flex-direction: column;
+                grid-column: 1/3;
+                & .text1{
+                    @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
+                    margin-bottom: 8px;
+                }
+                & .text2{
+                    margin-bottom: 8px;
+                }
+                & .text3{
+                    @include text('Cormorant Upright',normal,600,64px,130%,0.03em,#DCCA87) ;
+                }
+            }
+            & .cardGrid{
+                margin-top: 64px;
+                display: grid;
+                grid-template-columns: 79px 191px ;
+                grid-template-rows: 50% 50% ;
+                gap:0 32px;
+                & .text1{
+                    grid-row: 1/3;
+                }
+                & .text2{
+                    @include text('Cormorant Upright',normal,700,23px,130%,0.03em,#DCCA87) ;
+                }
+                & .text3{
+                    grid-row:2/3 ; 
+                    @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#AAAAAA) ;
+                }
+            }
+
+        }
+        & .laurelsImg{
+            position: relative;
+            & .G2{
+                position: absolute;
+                top:312px;
+                right: 195px    ;
+            }
+        }
+    }
+}
+
+.blogs{
+    background-color: black;
+    min-height: 1032px;
+    & .blogsGrid{
+        display: grid;
+        min-height: 1032px;
+        padding: 152px 310px;
+        grid-template-columns: repeat(3,33.3%) ;
+        grid-template-rows: 202px 838px 44px ;
+        gap:0 13px ;
+        & .texts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-column: 1/4;
+            // margin-bottom: 64px;
+            & .text1{    
+                @include text('Cormorant Upright',normal,700,23px,130%,0.04em,#FFFFFF) ;
+                margin-bottom: 8px;
+            }
+            & .text2{
+                margin-bottom: 8px;
+            }
+            & .text3{
+                @include text('Cormorant Upright',normal,600,64px,130%,0.03em,#DCCA87) ;
+            }
+        }
+        & .card{
+            display: flex;
+            flex-direction: column;
+            // margin-bottom: 64px;
+            & .cardData{
+                margin-top: 24px;
+                margin-bottom: 32px;
+                @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#FAFAFA) ;
+            }
+            & .cardDescription{
+                margin-bottom: 32px;
+                @include text('Cormorant Upright',normal,400,32px,130%,0.04em,#DCCA87) ;
+            }
+                
+            & .cardTextDescr{
+                margin-bottom: 32px;
+                @include text('Cormorant Upright',normal,400,16px,175%,0.04em,#AAAAAA) ;
+            }
+            & .readmore{
+                @include text('Cormorant Upright',normal,700,16px,175%,0.04em,#DCCA87) ;
+            }
+        }
+        & .butt{
+            text-align: center;
+            grid-area: 3/2;
+            justify-items: center;
+            & button{
+                @include button(157px,44px,4px 8px,#DCCA87,solid 1px #DCCA87,1%) ;
+            }
+        }
+    }
 }
